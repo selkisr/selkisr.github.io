@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Digital Freedom Alliance</title>
+    <!-- Add any CSS styles or links to external style sheets here -->
+  </head>
+  <body>
+    <header>
+      <img src="path/to/logo.png" alt="Digital Freedom Alliance logo">
+    </header>
+    <main>
+      <h1>Welcome to the Digital Freedom Alliance</h1>
+      <p>Join our movement to protect digital freedoms and promote the use of cryptocurrency.</p>
+      <form>
+        <label for="email">Join our email list:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <div>
+        <a href="https://twitter.com/DigitalFreedomA">Follow us on Twitter</a>
+        <a href="https://discord.gg/DigitalFreedomA">Join us on Discord</a>
+      </div>
+      <form action="https://checkout.stripe.com/pay" method="POST">
+        <input type="hidden" name="key" value="your_publishable_key">
+        <input type="hidden" name="amount" value="1000">
+        <input type="hidden" name="currency" value="usd">
+        <input type="hidden" name="description" value="Donation to the Digital Freedom Alliance">
+        <button type="submit">Donate $10</button>
+      </form>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2023 Digital Freedom Alliance</p>
+    </footer>
+  </body>
+</html>
